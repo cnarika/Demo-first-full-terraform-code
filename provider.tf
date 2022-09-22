@@ -1,4 +1,4 @@
-terraform { # parent module
+terraform {                                   # parent module
     required_providers {
       aws = {
         source = "hashicorp/aws"
@@ -9,3 +9,4 @@ terraform { # parent module
 provider "aws" { # child module
     region = "${var.region}"
 }
+
