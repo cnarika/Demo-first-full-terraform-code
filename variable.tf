@@ -1,5 +1,5 @@
 variable "region" {
-  description = "My region" #is optional
+  #description = "My region" #is optional
   default = "us-east-1"
 }
    variable "environment" {
@@ -26,6 +26,18 @@ variable "private_subnet_2_cidr" {
 variable "private_subnet_3_cidr" {
   description = "Private Subnet 3 cidr block"
 }
+
+vpc_cidr = "10.0.0.0/16"
+public_subnet_1-cidr = "10.0.0.0/24"
+public_subnet_2-cidr = "10.0.0.0/24"
+public_subnet_3-cidr = "10.0.0.0/24"
+private_subnet_1-cidr = "10.0.0.0/24"
+private_subnet_2-cidr = "10.0.0.0/24"
+private_subnet_3-cidr = "10.0.0.0/24"
+instance_type = "t2.micro"
+instance_ami = "ami-0c6b1d09930fac512"
+secgroupname = "IAC-Sec-Group"
+
 #variable "instance_type" {
 #instance = "${var.instance}"
 #}
@@ -41,4 +53,4 @@ variable "private_subnet_3_cidr" {
  #   subnet = "subnet-81896c8e"
  #   publicip = true
  #   keyname = "myseckey"
- #   secgroupname = "IAC-Sec-Group"
+   
