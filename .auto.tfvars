@@ -1,7 +1,5 @@
 region = "us-east-1"
 environment = "development"
-vpc "vpc-values" {
-    default "values" {
 
 vpc_cidr = "10.0.0.0/16"
 public_subnet_1-cidr = "10.0.0.0/24"
@@ -13,8 +11,8 @@ private_subnet_3-cidr = "10.0.0.0/24"
 instance_type = "t2.micro"
 instance_ami = "ami-0c6b1d09930fac512"
 keyname = "cassa1-key"
-}
-}
+
+
 
  #region = "us-east-1"
     vpc = "vpc-5234832d"
