@@ -26,9 +26,19 @@ variable "private_subnet_2_cidr" {
 variable "private_subnet_3_cidr" {
   description = "Private Subnet 3 cidr block"
 }
-variable "instance_type" {
+variable "instance" "instance_type" {
 instance = "${var.instance}"
 }
 
 # another way of doing 1-3; enter variable value in .auto.tfvariable "region" { }
   
+
+
+ region = "us-east-1"
+    vpc = "vpc-5234832d"
+    ami = "ami-0c1bea58988a989155"
+    itype = "t2.micro"
+    subnet = "subnet-81896c8e"
+    publicip = true
+    keyname = "myseckey"
+    secgroupname = "IAC-Sec-Group"
