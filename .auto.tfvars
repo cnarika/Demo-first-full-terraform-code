@@ -12,7 +12,7 @@ instance_type = "t2.micro"
 instance_ami = "ami-0c6b1d09930fac512"
 keyname = "cassa1-key"
 
-
+#awsprops = 
 
  #region = "us-east-1"
     vpc = "vpc-5234832d"
