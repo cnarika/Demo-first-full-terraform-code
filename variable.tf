@@ -35,9 +35,9 @@ variable "private_subnet_3_cidr" {
 #private_subnet_2-cidr = "10.0.0.0/24"
 #private_subnet_3-cidr = "10.0.0.0/24"
 #instance_type = "t2.micro"
-instance_type = "${var.instance_type}"
-instance_ami = "ami-0c6b1d09930fac512"
-secgroupname = "IAC-Sec-Group"
+#instance_type = "${var.instance_type}"
+#instance_ami = "ami-0c6b1d09930fac512"
+#secgroupname = "IAC-Sec-Group"
 
 #variable "instance_type" {
 #instance = "${var.instance}"

@@ -19,4 +19,4 @@ keyname = "cassa1-key"
     #subnet = "subnet-81896c8e"
     publicip = true
     #keyname = "myseckey"
-    secgroupname = "IAC-Sec-Group"
+    #secgroupname = "IAC-Sec-Group"
