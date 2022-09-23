@@ -11,5 +11,6 @@ vpc_id = "${aws_vpc.development.vpc.id}"
 availability_zone = "${var.region}a"
 tags = {
 name = "${var.environment}.public-subnet-1"
+aws_vpc = "${aws_vpc.development}"
 }
 }
