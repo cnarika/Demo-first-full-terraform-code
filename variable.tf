@@ -26,9 +26,9 @@ variable "private_subnet_2_cidr" {
 variable "private_subnet_3_cidr" {
   description = "Private Subnet 3 cidr block"
 }
-variable  "instance_type" {
-instance = "${var.instance}"
-}
+#variable "instance_type" {
+#instance = "${var.instance}"
+#}
 
 # another way of doing 1-3; enter variable value in .auto.tfvariable "region" { }
   
