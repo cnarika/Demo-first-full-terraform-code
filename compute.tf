@@ -1,4 +1,4 @@
-resource "aws_instance" {
+resource "aws_instance" "instance_type" {
   ami             = "${data.aws_ami.amazon-linux-2.id}"
   #itype   = "t2.micro"
   instance_type = "t2.micro"
