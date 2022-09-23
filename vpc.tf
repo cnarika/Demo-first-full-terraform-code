@@ -1,4 +1,4 @@
-resource "aws_vpc" "development-vpc" {
+resource "aws_vpc" "environment-vpc" {
     cidr_block = "${var.vpc_cidr}"
     enable_dns_hostnames = true
     tags = {
@@ -11,6 +11,6 @@ vpc_id = "${aws_vpc.development.vpc.id}"
 availability_zone = "${var.region}a"
 tags = {
 name = "${var.environment}.public-subnet-1"
-aws_vpc = "${aws_vpc.development}"
+#aws_vpc = "${aws_vpc.development}"
 }
 }
