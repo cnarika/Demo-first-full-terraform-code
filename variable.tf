@@ -26,7 +26,8 @@ variable "private_subnet_2_cidr" {
 variable "private_subnet_3_cidr" {
   description = "Private Subnet 3 cidr block"
 }
-variable "instance" "instance_type" {
+#variable "instance" "instance_type" {
+variable "instance" {
 instance = "${var.instance}"
 }
 
