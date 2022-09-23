@@ -26,8 +26,7 @@ variable "private_subnet_2_cidr" {
 variable "private_subnet_3_cidr" {
   description = "Private Subnet 3 cidr block"
 }
-#variable "instance" "instance_type" {
-variable "instance" {
+variable  "instance_type" {
 instance = "${var.instance}"
 }
 
@@ -35,7 +34,7 @@ instance = "${var.instance}"
   
 
 
- region = "us-east-1"
+ #region = "us-east-1"
     vpc = "vpc-5234832d"
     ami = "ami-0c1bea58988a989155"
     itype = "t2.micro"
