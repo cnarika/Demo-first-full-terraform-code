@@ -27,7 +27,8 @@ variable "private_subnet_3_cidr" {
   description = "Private Subnet 3 cidr block"
 }
 
-vpc_cidr = "10.0.0.0/16"
+#vpc_cidr = "10.0.0.0/16"
+vpc_cidr = "${var.vpc-cidr}"
 public_subnet_1-cidr = "10.0.0.0/24"
 public_subnet_2-cidr = "10.0.0.0/24"
 public_subnet_3-cidr = "10.0.0.0/24"
